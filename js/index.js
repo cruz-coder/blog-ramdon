@@ -1,7 +1,13 @@
+console.log("esto funcionas")
+
 const btnEnviar = document.getElementById("btnEnviar")
+console.log("esto funcionas")
+
+recibiendoPublicacion()
 
 function recibiendoPublicacion(){
     btnEnviar.addEventListener("click", verificar)
+    console.log("esto funcionas")
 }
 
 function verificar(){
@@ -11,7 +17,7 @@ function verificar(){
     if( titulo === "" || textoPublicacion === "" ){
         alert("por favor, llene los campos correspondientes")
     }else{
-        //NewPublicaciones.crearPublicacion(titulo,texto)
+        alert("se publico con exito")
     }
 }
 
@@ -22,7 +28,7 @@ function cargarPublicacion(){
             texto: "Investigadores han buscado signos tecnológicos de extraterrestres en los momentos en que los exoplanetas pasan directamente frente a los soles, desde el punto de vista de la Tierra"
         },
         {
-            titulo: "La nueva temporada de rick and morty 2",
+            titulo: "La nueva temporada de rick and morty",
             texto: "Los fans de los singulares viajes intergalácticos de Rick y Morty están de enhorabuena. La sexta temporada de la ganadora de dos premios Emmy a mejor serie de animación, y recientemente nominada a un tercero, verá la luz el próximo 5 de septiembre en HBO Max."
         }
     ]
